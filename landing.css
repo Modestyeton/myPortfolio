@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+nav{
+background-color: rgb(248, 228, 248);
+color: purple;
+display: flex;
+padding-top: 30px;
+padding-bottom: 10px;
+}
+
+header nav h1{
+    margin-left: 150px;
+    border: 2px solid purple;
+    padding: 5px;
+}
+nav h1 span{
+    color: rgb(75, 1, 75);
+}
+
+nav ul{
+    display: flex;
+    margin-left: 200px;
+    margin-right: 100px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: purple;
+    padding-top: 10px;
+}
+
+nav ul li a:hover{
+    color: goldenrod;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    background-color: white;
+}
+header nav ul li{
+    list-style: none;
+    margin-left: 150px;
+}
+
+section{
+    background-image: url(./back.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section{
+    display: absolute;
+    padding-top: 250px;
+    padding-bottom: 200px;
+    padding-left: 150px;
+}
+
+section h1{
+margin-bottom: 20px;
+font-size: 80px;
+color: white;
+}
+section p{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+section a{
+    text-decoration: none;
+    color: white;
+    border: 2px solid purple;
+    background-color:purple;
+    border-radius: 10px;
+    padding: 5px 15px;
+    }
+
+    section a:hover{
+        background-color: white;
+        color: rgb(252, 18, 1);
+        border: 2px solid white;
+    }
+
+    .about-me{
+        display: flex;
+        background-color:  rgb(180, 166, 180);
+        padding: 100px 200px;
+    }
+
+    .image{
+        width: 400px;
+        height: 500px;   
+    }
+
+    .info{
+        color: white;
+        margin-left: 50px;
+        margin-top: 80px;
+    }
+    .info h1{
+        font-size: 90px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .info h4{
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+    
+    .info h4 span{
+        color: purple;
+    }
+    .info p{
+        margin-bottom: 20px;
+    }
+   
+    .info a{
+    text-decoration: none;
+    color:goldenrod;
+    margin-top: 50px;
+    border: 2px solid white;
+    background-color:white;
+    border-radius: 30px;
+    padding: 5px 10px;
+    } 
+   
+    .info a:hover:hover{
+        color: purple;
+        background-color: rgb(248, 228, 248);
+        border: 2px solid  rgb(248, 228, 248);
+    }
