@@ -3,49 +3,92 @@
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    }
+
+.navwrap{
+    background-color: #280d2f;
 }
 
 nav{
-background-color: rgb(248, 228, 248);
-color: purple;
+background-color: #280d2f;
+color: #fff;
 display: flex;
 padding-top: 30px;
 padding-bottom: 10px;
+width: 90%;
+margin: auto;
+/* gap: 50px; */
+justify-content: space-between;
+align-items: baseline;
 }
 
+.menus {
+    display: none;
+    color: #fff;
+}
 header nav h1{
-    margin-left: 150px;
-    border: 2px solid purple;
+    /* margin-left: 150px; */
+    border: 2px solid white;
     padding: 5px;
 }
 nav h1 span{
-    color: rgb(75, 1, 75);
+    color: rgb(179, 3, 179);
 }
 
 nav ul{
     display: flex;
-    margin-left: 200px;
-    margin-right: 100px;
+    gap: 30px;
 }
 
 header nav ul li a{
     text-decoration: none;
-    color: purple;
+    color: white;
     padding-top: 10px;
 }
 
 nav ul li a:hover{
-    color: goldenrod;
+    color: purple;
     border: 2px solid white;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 5px 10px;
     background-color: white;
 }
 header nav ul li{
     list-style: none;
-    margin-left: 150px;
+    /* margin-left: 150px; */
 }
 
+
+#menuBar{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    color: black;
+    width: 50%;
+    height: 300px;
+}
+
+#menuBar ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: purple;
+    font-size: 18px;
+    }
+
+    #menuBar ul li{
+    margin-top: 30px;
+    margin-left: 10px;
+    }
+
+    #menuBar .conn{
+        background-color: purple;
+        color: #fff;
+        text-decoration: none;
+        padding: 5px ;
+        border-radius: 10px;
+            }
+
+/* next section starts here */
 section{
     background-image: url(./back.png);
     background-position: center;
@@ -55,11 +98,15 @@ section{
 
 section{
     display: absolute;
-    padding-top: 250px;
-    padding-bottom: 200px;
-    padding-left: 150px;
-}
+    width: 100%;
+    height: 90vh;
+    }
 
+section .text{
+    width: 90%;
+    margin: auto;
+    padding-top: 200px;
+}
 section h1{
 margin-bottom: 20px;
 font-size: 80px;
@@ -75,35 +122,57 @@ section a{
     text-decoration: none;
     color: white;
     border: 2px solid purple;
-    background-color:purple;
+    background-color: #280d2f;
     border-radius: 10px;
     padding: 5px 15px;
     }
 
     section a:hover{
         background-color: white;
-        color: rgb(252, 18, 1);
+        color: purple;
         border: 2px solid white;
     }
 
+/* About me section */
+
+    .about{
+        width: 100%;
+        background-color: #280d2f;
+    }
     .about-me{
         display: flex;
-        background-color:  rgb(180, 166, 180);
-        padding: 100px 200px;
+        flex-direction: column;
+        /* background-color:  red; */
+        color: #fff;
+        padding: 30px 0px;
+        width: 90%;
+        margin: auto;
+        align-items: center;
+        }
+        
+    .imageme{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* background-color: #fff; */
+        /* color: #280d2f; */
     }
 
+    .imageme h1,
+    .info h4,
+    .info p{
+        text-align: center;
+    }
+       
     .image{
-        width: 400px;
-        height: 500px;   
+        width: 76%;
+        margin: auto;
+        border-radius: 100%;
+       
     }
 
-    .info{
-        color: white;
-        margin-left: 50px;
-        margin-top: 80px;
-    }
     .info h1{
-        font-size: 90px;
+        font-size: 60px;
         margin-top: 30px;
         margin-bottom: 20px;
     }
@@ -121,8 +190,10 @@ section a{
     }
    
     .info a{
+        /* width: 40%;
+    margin: auto; */
     text-decoration: none;
-    color:goldenrod;
+    color:purple;
     margin-top: 50px;
     border: 2px solid white;
     background-color:white;
@@ -134,4 +205,165 @@ section a{
         color: purple;
         background-color: rgb(248, 228, 248);
         border: 2px solid  rgb(248, 228, 248);
+    }
+
+/* Project section */
+
+.projectSet h1{
+    text-align: center;
+    margin: 20px 0px;
+    color: #280d2f;
+}
+
+.projectSet h2{
+    color: purple;
+}
+
+.projectSet .wrap{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    margin-bottom: 29px;
+}
+
+.projectSet .wrap .one{
+    width: 48%;
+    margin: auto;
+    justify-content: space-between;
+    gap: 60px;
+    
+}
+
+.projectSet .wrap .one img{
+    width: 100%;
+    box-shadow: 2px 3px 3px 2px #aaaa;
+}
+
+/* footer section */
+
+footer{
+    background-color: #280d2f;
+    color: #fff;
+}
+footer .wrapper{
+width: 90%;
+margin: auto;
+display: flex;
+justify-content: space-between;
+
+}
+
+footer .wrapper .right{
+    padding: 60px 0px;
+    width: 60%;
+    text-align: center;
+    /* background-color: #fff; */
+}
+
+footer .wrapper .left{
+    width: 40%;
+}
+
+footer .wrapper .right h2{
+  margin-bottom: 20px;  
+}
+
+footer .wrapper .right .social a{
+    margin-right: 20px;
+    font-size: 30px;
+    color: rgb(190, 134, 134);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px;
+    align-items: center;
+}
+
+form input{
+    width: 90%;
+    padding: 10px 7px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    align-items: center;
+    border: none;
+    background-color: #f8edfc;
+}
+textarea{
+    width: 90%;
+    background-color: #f8edfc;
+    margin-bottom: 25px;
+}
+
+button{
+    width: 50%;
+    background-color: rgb(190, 134, 134);
+    padding: 10px 7px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+}
+
+    /* media query */
+    @media screen and (max-width: 1000px){
+      nav ul li a{
+        display: none;
+      }  
+      nav h1{
+        font-size: 15px;
+      }
+
+      #menu{
+        display: block;
+        /* color: red; */
+        font-size: 25px;
+      }
+
+      #close{
+        display: none;
+        font-size: 25px;
+      }
+
+      section h1{
+            font-size: 20px;
+        }
+        section p{
+            font-size: 15px;
+        }
+        
+        .about-me{
+            flex-direction: column;
+            padding-bottom: 20px;
+        }
+
+        .image{
+            width: 50%;
+            /* height: 200px;    */
+        }
+
+        .info h1{
+            font-size: 40px;
+        }
+    
+        .info h4{
+            font-size: 20px;
+        }
+        
+        .projectSet .wrap{
+            flex-direction: column;
+            }
+        .projectSet .wrap .one{
+            width: 90%;
+            margin-bottom: 20px;
+        }
+
+        footer .wrapper{
+            flex-direction: column;
+        }
+        footer .wrapper .right,
+        footer .wrapper .left{
+            width: 90%;
+            margin: auto;
+        }
     }

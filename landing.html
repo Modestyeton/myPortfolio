@@ -6,41 +6,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landingpage</title>
     <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
-       <nav>
-                <h1>MODESTY <span>ETON</span></h1>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            
-        </nav>
+      <div class="navwrap">
+        <nav>
+
+            <h1>MODESTY <span>ETON</span></h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="menus">
+            <div id="menu">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <div id="close">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+        </div>
+    </nav>
+      </div>
+
+      <div id="menuBar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a class="conn" href="#">Let's Connect</a>
+            </li>
+        </ul>
+    </div>
+      
+        
 
        <section>
-        <h1>HELLO!!!</h1>
+        <div class="text">
+            <h1>HELLO!!!</h1>
         <P>My name is Modesty Eton, <br> I am a Frontend Developer</P>
         <a href="#">Let's Connect</a>
-       </section>
+        </div>
+        </section>
 
        <!-- About Me section -->
-       <main class="about-me">
-        <div>
-            <img src="./me.png" alt="IMAGE" class="image">`
-        </div>
-
-        <div class="info">
-            <h1>
-                About Me
-            </h1>
-            <h4>Developer <span>& Digital Marketer</span></h4>
-            <p>I am a front-end web developer. I can provide clean code and perfect design. 
+       
+       <div class="about" id="about" >
+        <div class="about-me">
+            
+            <div class="imageme">
+                <h1>About Me</h1>
+                <img src="./me.png" alt="IMAGE" class="image">`
+            </div>
+    
+            <div class="info">
+                
+                <h4>Developer <span>& Digital Marketer</span></h4>
+                <p>I am a front-end web developer. I can provide clean code and perfect design. 
+                <br>
                 I also provide digital marketing services for brands and design. </p>
-            <a href="#">Let's Chat</a>
-        </div>
+                <a class="let" href="#">Let's Chat</a>
+            </div>
+       </div>
     </header>
 
+<!-- project section  -->
+<div class="projectSet" id="project">
+    <h1>My Projects</h1>
+    <div class="wrap">
+        <div class="one">
+            <a href=""><img src="./dev-portfolio.PNG" alt=""></a>
+            <h2>Developer Portfolio Challenge &rightarrow;</h2>
+            <br> 
+            <p> Codewell.cc Developer's Portfolio Challenge using 
+                HTML, CSS and Javascript.
+            </p>
+        </div>
+
+        <div class="one">
+            <a href=""><img src="./digital-converter.PNG" alt=""></a>
+        <h2>Digital Converter &rightarrow;</h2>
+        <br>
+        <p>A Digital Converter with Vanilla Javascript to
+            convert Centimeters to yards and vice versa, Miles to Inches
+            and vice versa.
+        </p>
+        </div>
+    </div>
+</div>
+
+<div class="projectSet">
+        <div class="wrap">
+        <div class="one">
+            <a href=""><img src="./waste-junkie.PNG" alt=""></a>
+            <h2>Wastejunkie &rightarrow;</h2>
+            <br> 
+            <p>Wastejunkie Landing Page. A platform where users
+                can signup to trade their plastic waste for cash.
+            </p>
+        </div>
+
+        <div class="one">
+            <a href=""><img src="./lauras-crib.PNG" alt=""></a>
+        <h2>Crypto website &rightarrow;</h2>
+        <br>
+        <p> A Crypto currency website still in progress.
+        </p>
+        </div>
+    </div>
+</div>
+
+
+
+<footer>
+    <div class="wrapper">
+        <div class="right">
+            <h2>Interested in working with me?</h2>
+            <p>I'm active on all socia media platforms listed
+                below, but you can also send me an email and I
+                will get back to you within 24-48 hours,
+            </p>
+            <br>
+            <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+        </div>
+    
+        <div class="left">
+                <div class="form">
+                    <form action="">
+                        <input type="text" name="text" value="Enter your name" id="" required>
+                        <textarea name="" id="" cols="20" rows="10"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                
+            </div>
+    </div>
+    
+</footer>
+<script src="./script.js"></script>
 </body>
 </html>
