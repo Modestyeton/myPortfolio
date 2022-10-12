@@ -201,7 +201,7 @@ section a{
     text-align: center;
     margin-top: 100px;
     margin-bottom: 30px;
-    color: #280d2f;
+    color: purple;
 }
 
 .projectSet h2{
@@ -292,7 +292,7 @@ footer .wrapper .right h2{
 
 footer .wrapper .right .social a{
     margin-right: 20px;
-    font-size: 30px;
+    font-size: 25px;
     color: rgb(190, 134, 134);
 }
 
